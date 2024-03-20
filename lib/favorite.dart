@@ -14,7 +14,7 @@ class Favorites extends StatelessWidget {
           Container(
             clipBehavior: Clip.antiAliasWithSaveLayer,
             decoration: const BoxDecoration(
-              borderRadius: BorderRadius.vertical(bottom: Radius.circular(20))
+              borderRadius: BorderRadius.vertical(bottom: Radius.circular(30))
             ),
             child: AppBar(
               backgroundColor: Constants.blueAppColor,
@@ -22,14 +22,26 @@ class Favorites extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          MyText(text: 'احفظ اماكن الاقامة المفضلة والاماكن التي تود زيارتها في وقت لاحق',color: Constants.blueAppColor,fontSize: 16,),
-          const SizedBox(
-            height: 16,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            child: Column(
+              children: [
+                MyText(
+                  text: 'احفظ اماكن الاقامة المفضلة والاماكن التي تود زيارتها في وقت لاحق',
+                  color: Constants.blueAppColor,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                ),
+                const SizedBox(
+                  height: 18,
+                ),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(backgroundColor: Constants.blueAppColor),
+                    child: MyText(text: 'ابدأ بحثك',color: Colors.white,)),
+              ],
+            ),
           ),
-          ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(backgroundColor: Constants.blueAppColor),
-              child: MyText(text: 'ابدأ بحثك',color: Colors.white,)),
 
           const Spacer()
         ],

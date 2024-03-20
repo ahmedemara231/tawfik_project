@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:tawfik_project/favorite.dart';
 import 'package:tawfik_project/home/home.dart';
+import 'package:tawfik_project/profile/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           GlobalWidgetsLocalizations.delegate,
           // IntlLocalizations.delegate,
         ],
-        home: Favorites()
+        home: Profile()
     );
   }
 }
